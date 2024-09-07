@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logogold" />
+
+    <!-- Welcome Title -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Welcome to Pop Berry Studios Learning App!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Welcome Description -->
+    <TextView
+        android:id="@+id/welcomeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Welcome to the Pop Berry Studios Learning App, your ultimate companion for a seamless and enriching learning experience. Designed with you in mind, our app combines cutting-edge AI technology with an intuitive interface to bring you personalized education like never before."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+    <!-- Start Learning Button -->
+    <Button
+        android:id="@+id/startLearningButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFD055"
+        android:padding="16dp"
+        android:text="START LEARNING"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/homepng"
+            android:adjustViewBounds="true"
+            android:maxHeight="28dp"
+            android:maxWidth="28dp"/>
+
+        <ImageView
+            android:id="@+id/communityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:adjustViewBounds="true"
+            android:maxHeight="28dp"
+            android:maxWidth="28dp"/>
+
+        <ImageView
+            android:id="@+id/aiw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/aiw"
+            android:adjustViewBounds="true"
+            android:maxHeight="28dp"
+            android:maxWidth="28dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
